@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a ::after ::before {
+  color: rgb(100, 72, 72);
+}
+/* take care mainpage and login page (base stuctur)*/
+body {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-areas: "header" "main" "wrapper" "footer";
+  grid-gap: 10px;
+  background-color: #252525;
+  padding: 10px;
+  font-family: sans-serif;
+}
+/*header incuding nav*/
+.header nav {
+  grid-area: header;
+  height: 75px;
+  background: rgb(31, 30, 30);
+  background: linear-gradient(
+    0deg,
+    rgba(60, 89, 184, 0.123) 0%,
+    rgba(24, 65, 99, 0.808) 100%
+  );
+  display: grid;
+  grid-template-areas: "logo links links login";
+  grid-gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+#main {
+  grid-area: main;
+}
+
+.header nav h1 {
+  font-size: 30px;
+  color: rgb(150, 150, 150);
+}
+
+.header nav ol {
+  list-style: none;
+  justify-content: space-around;
+}
+
+.header nav ol li {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header a {
+  grid-area: login;
+  color: rgb(129, 66, 134);
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: white;
+}
+
+footer {
+  grid-area: footer;
+  display: grid;
+  background-color: #414141;
+  height: 45px;
+  color: white;
+  padding-top: 25px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.maininfor {
+  display: grid;
+  grid-template-areas: "main-content main-content aside";
+}
+
+main {
+  grid-area: main-content;
+}
+/* displays the aricals and main text*/
+.start-side-content {
+  display: grid;
+  grid-template-areas: "mainHead mainHead" "mainText mainText" "artical1 artical2";
+  grid-gap: 10px;
+  background-color: #575757;
+  padding: 10px;
+}
+
+main h3 {
+  grid-area: mainHead;
+  background-color: #737074;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+main p {
+  grid-area: mainText;
+  background-color: #737074;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: #707070;
+  padding: 10px;
+}
+
+.aside ul li {
+  list-style: none;
+  color: green;
+}
+
+.aside ul li {
+  list-style: none;
+  color: red;
+}
+
+.artical {
+  grid-area: artical1;
+  background-color: #969696;
+}
+b {
+  color: blue;
+}
+
+.artical {
+  grid-area: artical2;
+  background-color: #969696;
+  padding-left: 3px;
+}
+/* for the login page*/
+div {
+  grid-area: wrapperContent;
+}
+
+#div {
+  grid-area: wrapper;
+}
+
+.wrapperContent {
+  display: grid;
+  grid-template-areas: "wrapperContent wrapperContent wrapperContent";
+}
+
+.login-page-content {
+  display: grid;
+  grid-template-areas: "mainhead mainhead mainHead" "form form form";
+  grid-gap: 10px;
+  background-color: #707070;
+  padding: 10px;
+}
+
+.mainhead {
+  grid-area: mainhead;
+  height: 40px;
+  margin-left: 29%;
+  margin-top: 4%;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.form {
+  grid-area: form;
+  margin-left: 20%;
+  margin-top: 2%;
+}
+input {
+  padding-top: 10px;
+}
+input[type="text"] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+input[type="text"]:focus {
+  border: 3px solid rgb(172, 95, 95);
+}
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: #b8d0eb;
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+img {
+  height: 16px;
+  width: 16px;
+}

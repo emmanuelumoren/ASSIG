@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title> my first webpage</title>
-        <meta charset="UTF-8">
-        <style>
-            img{
-                width: 150px;
-                border-radius:  40px;
-            }
-        </style>
+<html lang="en" 
+<head>
+<meta name="description" content="Emmaneul-frontend developer">
+<meta charset="UTF-8">
+<meta name="author" content="Emmanuel Umoren"
+<link rel="stylesheet" href="Mycssfile.css">
+<title> my first front-end webpage</title>
     </head>
     <body>
-        <header>
-            <h1>YOU CAN MOVE MOUNTIANS</h1>
-            <img src="images/zachary-reimer-edk_RmsCwdo-unsplash.jpg" alt="">
+        <header class="header">
+            <nav>class="nav">
+                <img class="specailimage" src="images/zachary-reimer-edk_RmsCwdo-unsplash.jpg" alt=""       
+                <h1>YOU CAN MOVE MOUNTIANS</h1>
             <ul>
 
                 <li>
@@ -27,29 +25,27 @@
                     </li>            
                 </ul>
                 <a href="Index.html">Index</a>
+            </nav>
     
     </header>
         
-        <main>
-            <h1>User Login</h1>     
-    
-            <form action="/action_page.php">
-            <label for="username">username:</label>
-            <input type="text"/> 
-            <label for="Password">Password:</label>
-            <input type="password"/>
-             <input type="Reset"> 
-             <input type="submit" value="Login"/>
+        <section id="wrapper" class="wrapperinfor">
+            <div>class="login-page-content"</div>
+            <h1 class="mainhead">user login</h1>
+            <form class="form">
+                <input type="text" name="username" placeholder="Username">
+                <br>
+                <input type="text" name="password" placeholder="Password">
+                <br>
+                <input class="btn-reset" type="button" value="Reset">
+                <br>
+                <input class="btn-sign-in" type="button" value="Sign in">
             </form>
+            <br>
+        </div>
     
-      
-        </main>
-
-        <footer>
-            <p> &copy;  Full name</p>
-        </footer>
-
-
-    </body>
+    </section>
+    <footer class="footer"><span>&copy; Emmanuel Umoren</span></footer>
+</body>
 
 </html>

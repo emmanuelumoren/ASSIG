@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title> my first webpage</title>
-        <meta charset="UTF-8">
-        <style>
-            img{
-                width: 150px;
-                border-radius:  40px;
-            }
-        </style>
+<html lang="en" 
+<head>
+<meta name="description" content="Emmaneul-frontend developer">
+<meta charset="UTF-8">
+<meta name="author" content="Emmanuel Umoren"
+<link rel="icont" href="image2/motivational-quotes-with-images.jpg">
+<link rel="stylesheet" href="Mycssfile.css">
+<title> my first front-end webpage</title>
     </head>
     <body>
-        <header>
-            <h1>YOU CAN MOVE MOUNTIANS</h1>
-            <img src="images/zachary-reimer-edk_RmsCwdo-unsplash.jpg" alt="">
+        <header class="header">
+            <nav class="nav">
+                <h1>  <img src="images/zachary-reimer-edk_RmsCwdo-unsplash.jpg" width="150" height="100"> </h1>
+            <h2>YOU CAN MOVE MOUNTIANS</h2>
             <ul>
-
                 <li>
                     <a href="https://www.w3schools.com"> Link 1</a>
                     </li>
@@ -27,17 +25,18 @@
                     </li>            
                 </ul>
                 <a href="login.html">login</a>
+                </nav>
         </header>
     
-    <main>
+    <section id="main" class="maininfor">
+        <main class="aside-content">
         <h1>Surround Yourself With Motivated People</h1>
         
         <p>This goes back to the positive environment point: You need to be 
             around others who are just as ambitious as you</p>
             
-            
-            <h1>Motivational Quotes for Entrepreneurs</h1>
-
+            <article class="artical 1">
+            <h2><b> Quotes for Entrepreneurs</b></h2>
 
             <p>All our dreams can come true, if we have the courage to pursue them</p>
 
@@ -50,27 +49,25 @@
 
 
             <p>It’s hard to beat a person who never gives up</p>
-
+            </article>
+            
+            
+            <article class="artical 2">
             <h3>Motivational Quote of the Day</h3>
-
-
             <p>Fairy tales are more than true: not because they tell us that dragons exist, 
                but because they tell us that dragons can be beaten</p>
-
-
             <p>When one door of happiness closes, another opens; but often  we look so long at 
                 the closed door that we do not see the one which has been opened for us</p>
+                <br>
+                <img src="image2/motivational-quotes-with-images.jpg" width="150" height="100">
 
-                <img src="image2/motivational-quotes-with-images.jpg" alt="">
-
+            </article>
             </main>
-            <aside>
+            
+            <aside class="aside">
                 
-                <h2>Hustle Quotes</h2>
-        
-        
+                <h3>Hustle Quotes</h3>
                 <ul>
-        
                     <li>
                         <p> No one is to blame for your future situation but yourself. If you want to be successful, then become “Successful. 1.</p>
                         </li>
@@ -89,7 +86,7 @@
 
 
                     
-                <h2> Sweden Land of promise 1</h2>
+                <h4> Sweden Land of promise 1</h4>
                 
                 <ol>
 
@@ -105,7 +102,7 @@
   
                 </ol>
 
-                <h2> Germany land of opportunities 2</h2>
+                <h4> Germany land of opportunities 2</h4>
 
                 <ol>
 
@@ -121,7 +118,7 @@
   
                 </ol>
 
-                <h2> France land of many 3</h2>
+                <h4> France land of many 3</h4>
 
                 <ol>
 
@@ -138,8 +135,7 @@
                 </ol>
                 
             </aside>
-            <footer>
-                <p> &copy;  Emmanunel Umoren</p>
-            </footer>
+    </section>
+            <footer class="footer"><span> &copy;  Emmanunel Umoren </span> </footer>
         </body>
         </html>
